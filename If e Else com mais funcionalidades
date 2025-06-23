@@ -1,0 +1,35 @@
+public class EstruturaDeDecisao {
+
+    public static void main(String[] args) {
+        numeropar();
+        stringIgual();
+    }
+
+    private static void numeropar() {
+        Integer numero = 4;
+
+        if(numero % 2 == 0){
+            System.out.println("Par");
+        }else{
+            System.out.println("Impar");
+        }
+    }
+
+    private static void stringIgual() {
+        String frase = "Hoje e segunda feira as sete da tarde";
+
+        if(frase.contains("segunda feira")){
+            if(frase.contains("seis da tarde")) {
+                System.out.println("hora de alegria");
+            }else{
+                System.out.println("Dia de Tristeza");
+            }
+        }else if(
+            frase.contains("sexta feira") || frase.contains("sabado") || frase.contains("domingo")
+        ){
+            System.out.println("Dia Feliz");
+        }else{
+            System.out.println("Dia Normal");
+        }
+    }
+}
